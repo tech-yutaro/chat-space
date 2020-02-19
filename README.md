@@ -12,3 +12,15 @@
 - has_many :groups, through: groups_users
 - has_many :messages
 
+#### messageテーブル
+|Column|Type|Options|
+|------|----|-------|
+|body|text|null: false|
+|image|string|
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+
+##### Association
+- belongs_to: group
+- belongs_to: user
+
