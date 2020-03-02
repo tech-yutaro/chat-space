@@ -1,0 +1,23 @@
+.side_bar
+  .header
+    .header__box
+      %p.header__box__user-name SNS
+      %ul.header__box__menu
+        %li.header__box__menu_new-group
+          = link_to "#", class: "icon" do
+            = icon('fas','edit')
+        %li.header__box__menu_edit-user
+          = link_to "#", class: "icon" do
+            = icon('fas','cog')
+
+  .groups
+    .group
+      %p.group__name
+        techcamp
+      %p.group__message
+        まだメッセージがありません
+    .group
+      %p.group__name
+        techcamp
+      %p.group__message
+        まだメッセージがありません

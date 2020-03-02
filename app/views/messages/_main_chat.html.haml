@@ -1,0 +1,42 @@
+.chat_main
+  .header
+    .header__left
+      %h1.header__left__group
+        test
+      %ul.header__left__member
+        Member : 
+        %li.header__left__member_name
+        sns
+    .header__right
+      .header__right__btn
+        = link_to "#", class: "btn" do
+          Edit
+
+  .messages
+    .message
+      .upper-message
+        %p.upper-message__user-name
+          test
+        %p.upper-message__date
+          2020/2/29(Sat) 18:00:00 
+      .lower-message
+        %p.lower-message__text
+          good!
+    .message
+      .upper-message
+        %p.upper-message__user-name
+          test
+        %p.upper-message__date
+          2020/2/29(Sat) 18:00:00 
+      .lower-message
+        %p.lower-message__text
+          good!
+
+  .form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}
