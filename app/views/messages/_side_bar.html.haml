@@ -1,14 +1,15 @@
 .side_bar
   .header
     .header__box
-      %p.header__box__user-name SNS
+      %h3.header__box__user-name
+        = current_user.name
       %ul.header__box__menu
         %li.header__box__menu_new-group
-          = link_to "#", class: "icon" do
-            = icon('fas','edit')
+          = link_to do
+            = icon('fas', 'edit', class: 'icon')
         %li.header__box__menu_edit-user
-          = link_to "#", class: "icon" do
-            = icon('fas','cog')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
 
   .groups
     .group
