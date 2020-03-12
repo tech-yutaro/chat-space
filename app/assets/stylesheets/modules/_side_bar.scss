@@ -34,16 +34,21 @@
     background-color: $side_blue_light;
     height: calc(100vh - 100px);
     padding: 20px 20px 0;
+
+    a {
+      text-decoration: none;
+    }
   
     .group {
       color: $white;
       margin-bottom: 40px;
-      text-decoration: none;
       &__name{
+        color: $white;
         font-size: 15px;
         margin-bottom: 5px;
       }
       &__message{
+        color: $white;
         font-size: 11px;
       }
     }
