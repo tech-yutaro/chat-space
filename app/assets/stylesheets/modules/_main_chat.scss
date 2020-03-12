@@ -33,8 +33,7 @@
       margin-top: 30px;
       padding: 0 20px;
       right: 40px;
-      
-      .btn {
+      &__btn {
       color: $light_blue;
       cursor: pointer;
       text-decoration: none;
@@ -64,7 +63,7 @@
       }
       
       .lower-message {
-        &__text{
+        &__content{
           color: #333333;
           font-size: 14px;
           margin-bottom: 10px;
@@ -77,6 +76,9 @@
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
+    position: absolute;
+    bottom: 0;
+    width: calc(100vw - 300px);
     
     form {
       display: flex;
