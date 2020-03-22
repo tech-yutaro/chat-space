@@ -2,11 +2,11 @@
   .header
     .header__left
       %h1.header__left__group
-        = @group
+        = @group.name
       %ul.header__left__member
         Member :
         %li.header__left__member_name
-          - @group
+          - @group.users.each do |user|
             = user.name
     .header__right
       .header__right__btn
